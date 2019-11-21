@@ -23,7 +23,7 @@ public class Minnie {
         System.out.println("Peek: " + queue1.peek());
         System.out.println(queue1.dequeue());
         System.out.println(queue1.isEmpty());
-        System.out.println("The algorithm with 4 entries took: " + (System.nanoTime() - start) + " ns to run");
+        System.out.println("The algorithm with 4 entries took: " + (System.nanoTime() - start) + " ns to run\n");
 
 
         //40 entries
@@ -37,7 +37,7 @@ public class Minnie {
         System.out.println("Peek: " + queue2.peek());
         System.out.println(queue2.dequeue());
         System.out.println(queue2.isEmpty());
-        System.out.println("The algorithm with 40 entries took: " + (System.nanoTime() - start) + " ns to run");
+        System.out.println("The algorithm with 40 entries took: " + (System.nanoTime() - start) + " ns to run\n");
 
         //400 entries
         start = System.nanoTime();
@@ -50,7 +50,7 @@ public class Minnie {
         System.out.println("Peek: " + queue3.peek());
         System.out.println(queue3.dequeue());
         System.out.println(queue3.isEmpty());
-        System.out.println("The algorithm with 400 entries took: " + (System.nanoTime() - start) + " ns to run");
+        System.out.println("The algorithm with 400 entries took: " + (System.nanoTime() - start) + " ns to run\n");
 
 
         //4000 entries
@@ -64,7 +64,7 @@ public class Minnie {
         System.out.println("Peek: " + queue4.peek());
         System.out.println(queue4.dequeue());
         System.out.println(queue4.isEmpty());
-        System.out.println("The algorithm with 4000 entries took: " + (System.nanoTime() - start) + " ns to run");
+        System.out.println("The algorithm with 4000 entries took: " + (System.nanoTime() - start) + " ns to run\n");
     }
 
 }
