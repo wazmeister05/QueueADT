@@ -1,13 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
-public class ArrayQueue<E> implements QueueADT {
+public class LinkedListQueue<E> implements QueueADT {
 
-    private List<E> queue;
+    private LinkedList<E> queue;
 
-    public ArrayQueue(){
-        queue = new ArrayList<>();
+    public LinkedListQueue(){
+        queue = new LinkedList<>();
     }
 
     @Override
@@ -20,20 +19,16 @@ public class ArrayQueue<E> implements QueueADT {
         queue.add((E) element);
     }
 
-
     @Override
     public Object dequeue() {
-        if(isEmpty()){
-            throw new NoSuchElementException();
+        if(queue.isEmpty()){
+            throw new NoSuchElementException("Queue empty");
         }
-        return queue.remove(0);
+        return queue.pop();     //or queue.removeFirst();
     }
 
     @Override
     public Object peek() {
-        if(isEmpty()){
-            throw new NoSuchElementException();
-        }
         return queue.get(0);
     }
 
